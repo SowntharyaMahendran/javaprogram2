@@ -1,0 +1,2350 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.16299}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Ubuntu Pastebin\par
+Paste from test at Tue, 19 Feb 2019 12:40:31 +0000\par
+\par
+\par
+ Pl - Simple way to talk to os shell\par
+\par
+os shell\par
+ 10 + 10\par
+\par
+ HLL -->Assembly---low level bit patterns\par
+\par
+ HLL-program1--->assembly --->program2--loaded  on os--hardware--will run the code.\par
+\par
+ program1 -compiler\par
+ program2- runtime\par
+\par
+Green: 1989 - SUN\par
+   Objective: Build one software for all os    \par
+\par
+1989 -1990-->1991-Test faild\par
+\par
+1991---->Virtual computing---jvm--virtual os   \par
+\par
+////////////////////////////////////////////\par
+JVM --Code?\par
+\par
+Pl - java Programming language\par
+..............................\par
+\par
+What is java pl?\par
+\par
+java pl is object oriented,functional  programming language.\par
+\par
+Programming paradigms:\par
+Paradigm means way of solving the problem.\par
+\par
+The language is just tool which implments the paradigm.\par
+\par
+Paradigms:\par
+1.procedure - c\par
+2.oo - c++,java,c#..\par
+3.fp - scheme,js,java,groovy,scala..\par
+4.Event driven\par
+5.Reactive programming\par
+......\par
+java is now object oriented, functional ,event driven,reactive programming.\par
+\par
+polyglot : Many programming languages,but runtime is same\par
+\par
+java,groovy,scala,kotlin,Ruby ----->JVM\par
+\par
+.............................................\par
+\par
+Language Design:\par
+1.Language fundamentals\par
+2.Object oriented programming\par
+3.Exception handling\par
+4.Collections\par
+5.IO\par
+\par
+////////////////////////////////////////\par
+How to start development?\par
+Compiler,IDE\par
+\par
+compiler,runtime => jdk - >java development kit - collection of tools and basic libs to write ,compile,test java programs.\par
+\par
+jdk is contains\par
+1.bin folder\par
+2.jre folder\par
+3.lib folder\par
+\par
+compiler  -javac - will convert java source code into byte code(assembly)\par
+\par
+runtime - java- will run byte on os\par
+\par
+libs - jre/lib - runtime libs\par
+////////////////////////////////////////////\par
+\par
+java version:\par
+java or jdk 1.0\par
+java 2\par
+java 3\par
+java 4\par
+java 5 - major improvments\par
+java 6\par
+java 7\par
+java 8 ---stable version jdk 1.8\par
+java 9\par
+java 10 \par
+java 11 - beta current\par
+////////////////////////////////////////////\par
+\par
+Java Applications: editions\par
+1.desk top app - JSE -java Standard Edition\par
+2.web apps - JEE -java Enterprise\par
+3.Device apps - JME - java Micro Edition | java Mobile Edition\par
+//////////////////////////////////////////\par
+\par
+IDE : Eclipse, IntelliJ idea,vs code,notepad,notepad++\par
+\par
+/////////////////////////////////////////////\par
+Eclipse:\par
+\par
+Workspace: where you are going to store your java projects\par
+\par
+javaproject layout\par
+projectName\par
+   src- -souce code\par
+   bin  -compiled code\par
+\par
+Coding standards:\par
+\par
+1.Source program\par
+ FileName.java\par
+FileName rules\par
+1.FileName must be meaningfull to the problem statement.\par
+HelloWorld.java\par
+\par
+2.compiled Code\par
+  FileName.class - Assembly code\par
+\par
+javac HelloWorld.java\par
+\par
+ HelloWorld.class\par
+\par
+java HelloWorld\par
+  It will load jvm on os and will load HelloWorld.class.\par
+\par
+Every pl has entry point to start program execution - main method.\par
+\par
+c / c++\par
+void main()\{\par
+\par
+\}\par
+\par
+java main method\par
+\par
+public static void main(String[]args)\{\par
+   //start your app\par
+\}\par
+\par
+main method will load jvm into os,and will load our code on jvm...\par
+\par
+\par
+public class HelloWorld \{\par
+\tab public static void main(String[] args) \{\par
+        //App starts\par
+\tab\tab System.out.println("Hello Java!");\par
+\tab\}\par
+\}\par
+\par
+Language fundamentals:\par
+1.type system\par
+2.variables\par
+3.literals\par
+4.operators\par
+5.control structures\par
+6.looping\par
+\par
+1.type system\par
+2.variables\par
+3.literals\par
+\par
+Pl -  to create program--->collection of instructions.\par
+Instructions  -  collection of data , how to process the data.\par
+\par
+Software:\par
+ ->Store the data\par
+ ->process the stored data\par
+ ->Get the Report after processing\par
+\par
+Store the data:\par
+1.Persitant storage - Permanent storage\par
+   ->File System-->data base\par
+2.Non persistant storage - In memory storage\par
+   ->Data is stored in RAM,CPU Registers\par
+\par
+In java\par
+ ->Store the data \par
+    ->In memory\par
+       ->variables : Data Holder,Stores data\par
+     variable type x=10-value(data)-literals\par
+     variable type y=10;\par
+ ->process the stored data\par
+     variable result = x + y;\par
+ ->Get the Report after processing\par
+     print the result is result -read,write\par
+\par
+  type variable=value(literal)\par
+\par
+  type-->numbers-0,1 -core type.\par
+\par
+  Abstract data types\par
+     create new types on core type.\par
+\par
+  number\par
+     -text,nontext\par
+\par
+  text =characters---string\par
+  nontext -number\par
+  number\par
+    dec,oct,hex,binary\par
+   \par
+ 1\par
+ 45.89\par
+ 7777777777777777777777777777777777  \par
+ 89.9e4\par
+ every storage capacity called size\par
+ based on value,jvm will request the space  to store the value. \par
+\par
+ int x=10;--->jvm will request os--->hardware   that i need 2 bytes memory.\par
+\par
+ number --byte,short,int,long,float,double\par
+\par
+ 10 -- 100100001\par
+\par
+int 4 bytes -2,147,483,648 to 2,147,483,647.\par
+\par
+byte 1 byte -128 to 127.\par
+\par
+byte a =10; //valid\par
+byte b =150; error\par
+\par
+price =90.89 // 4 bytes | 8 bytes\par
+\par
+BigInteger lightSpeed=934343434343434343434343434343434343434343434343434343434343434343434343443433434343434;\par
+\par
+java types\par
+1.text types \par
+  char - single character\par
+  String - collection of characters\par
+2.Numbers\par
+  byte,short,int,long\par
+  float,double\par
+3.state type : on and off - booleans\par
+  true  - 1 bit\par
+  false - 0 bit\par
+\par
+4.Custom types :Create new Types by the programmer based on 1 ,2, 3\par
+   Reference types\par
+\par
+Error types:\par
+1.compile time error\par
+    compiler verfies your souce code ,test\par
+whether any violation.\par
+ Type violation.\par
+ if the variable is assigned wrong literal  which is not part of that type or its family\par
+ will produce compile time error.\par
+   ->The compiler will ensure the type of variable should match the value assigned.\par
+\par
+ byte b =10; //valid\par
+ byte b= true; //in valid\par
+\par
+Strongly Typed | static typing | early binding programming language\par
+  The programming language will test the type of variable during compile time phase.\par
+\par
+  c,c++,java,C# ,groovy....\par
+\par
+Weakly typed | dynamic typing | late binding programming language\par
+  The pl will test the type of variable during\par
+ runtime phase\par
+ js,groovy,scala,python.....\par
+ \par
+2.Runtime error\par
+\par
+    (0)-100\par
+       |\par
+  byte b  =10 (0,1,1,0)\par
+   what is type of b => byte\par
+   what is type of 10 => int\par
+\par
+Note: the variable type is different from value type.\par
+ \par
+Rules:\par
+ byte,short,int,long \par
+    value type is by default is int(4 bytes)\par
+ byte b  =10(int)\par
+    \par
+   2 bytes= 4 bytes\par
+\par
+ type casting: converting from one type to another type.\par
+\par
+ float,double\par
+   default value type is double\par
+  float flt =90.78;\par
+\par
+ char\par
+   single character - ''\par
+  char storage 16 bit unicode character.\par
+   char a=90\par
+ booleans\par
+   boolean isValid = true;\par
+\par
+ String : collection of unicode characters\par
+///////////////////////////////////////////////////////////////\par
+Operators:\par
+\par
+Arthimetic operators:\par
+  +,-,*,/,%\par
+  ++,--\par
+\par
+comments: the information about your code\par
+// -single line comment\par
+/**\par
+\par
+**/\par
+\par
+Operator Overloading:\par
+\par
+ Changing Meaning of operator\par
+\par
+ + =>Addition - numbers 10 +10\par
+ + =>concatation = string+string or string + variable\par
+    "the result is" + result\par
+\par
+ counter = counter +1 equal to counter+=1\par
+\par
+///////////////////////////////////////////////////////////////\par
+The Equality and Relational Operators\par
+.....................................\par
+==      equal to\par
+!=      not equal to\par
+>       greater than\par
+>=      greater than or equal to\par
+<       less than\par
+<=      less than or equal to\par
+\par
+Operand\par
+  int x=1,y=2;\par
+  int r = x + y;\par
+          |     \par
+type result= operand  + operand\par
+                      |\par
+                  operation\par
+\par
+Quiz: Explore nummbers with respect to result type\par
+\par
+     int + int = ?\par
+     byte +short = ?\par
+     double + int =?\par
+\par
+==      equal to\par
+\par
+  Type operand 1 ==  Type operand 2 = boolean\par
+\par
+Note: equal operator works based on content\par
+!= ->operator is opposit to equal to operator\par
+\par
+/////////////////////////////////////////////////////////\par
+-greater than >  \par
+-less than <\par
+ type result = operand1 >  operand 2 \par
+ boolean result = 10 > 2;\par
+///////////////////////////////////////////////////////////////\par
+The Conditional Operators:\par
+\par
+&& Conditional-AND\par
+|| Conditional-OR\par
+!  Not\par
+\par
+Theses operators works based on truth table\par
+\par
+  t && t =true\par
+  f && f =f\par
+  t && f = f\par
+  \par
+boolean res= operand && operand\par
+ \tab\tab  |           |\par
+\tab      boolean     boolean\par
+//////////////////////////////////////////////////////////////\par
+Bitwise Operators: Convert numbers into bit pattern(0,1..)\par
+>> <<\par
+..............................................................\par
+Other operators:\par
+ ?:  - tenary operator\par
+ new - Object creation operator\par
+ instance of ->Type verification operator\par
+///////////////////////////////////////////////////////////////\par
+Control Structures and Statements:\par
+..................................\par
+1.decision making\par
+ -if\par
+   if \par
+   if..else\par
+   if..elseif\par
+   if...else if ..else\par
+- switch..case\par
+statements\par
+break,continue\par
+\par
+//////////////////////////////////////////////////////////\par
+\par
+if Syntax:\par
+\par
+ if(condition) \{\par
+   //\par
+ \}\par
+\par
+\{ \}-block -if block\par
+\par
+condition should be boolean\par
+\par
+switch case : to avoid nested if..else or if..else if + ==\par
+ provide clean coding.\par
+\par
+switch(input)\{\par
+  case condition:\par
+     code...\par
+  default:\par
+    //similar to final else\par
+\}  \par
+"break" not present if the code is inside function /method\par
+ will throw error called "not reachable"\par
+\par
+break statement stops further code execution,once the condition\par
+is evaulated true,will come out from the condition\par
+//////////////////////////////////////////////////////////////\par
+Looping: Iteration :Repeation:\par
+ Repeat the same thing until the condition is met.\par
+\par
+for,while,do..while\par
+\par
+for : iterator\par
+\par
+for(declaration and initalization;condition;incrementordecrement)\par
+\par
+for eg :  i want to produce 10 numbers\par
+   0..10\par
+condition - boolean - true | false\par
+ loop repet until condition is true.\par
+\par
+infinite loops:\par
+// infinite loop\par
+for ( ; ; ) \{\par
+    \par
+    // your code goes here\par
+\}\par
+for(int i=0; false;i++\{\}\par
+\par
+while(true)\{\par
+\par
+\}\par
+\par
+do\{\}while(true)\par
+//////////////////////////////////////////////////////////\par
+\par
+How to get Input?\par
+->Through Java io- input and output\par
+->Through command line args\par
+\par
+Command line args:\par
+..................\par
+\par
+Passing input to the main method.\par
+\par
+\par
+class Adition\{\par
+                         input\par
+                            |\par
+ public static void main(String[]args)\{\par
+\par
+    String a = args[0] //10\par
+    String b = args[1] //10\par
+   \par
+\par
+ \}\par
+\}\par
+\par
+ >java Addition 10 10 ->commandline input\par
+\par
+\par
+String to number conversion: casting\par
+\par
+///////////////////////////////////////////////////////////////\par
+Object oriented Programming concepts and Implementation:\par
+........................................................\par
+\par
+Object:\par
+\par
+please get employee information -\par
+copy text files from c drive to d drive\par
+please shutdown machine-01 at 11pm daily\par
+\par
+What is object?\par
+\par
+ ->Real world\par
+Chair is object?\par
+Account is Object?\par
+Customer is Object?\par
+\par
+God is Object? Yes  |No\par
+Heat is Object? \par
+Love is Object?\par
+Hungry is Object?\par
+\par
+sleep is object?\par
+\par
+dance is object?\par
+.............................................................\par
+ "Any thing could be Object but that should be related to Problem Statement"\par
+\par
+SDLC\par
+1.Req Any - Object oriented Any \par
+  - Identify Objects\par
+    eg :Account\par
+2.Design - converting req into documents\par
+  ->database design\par
+     -Objects are represented "tables"\par
+          -account\par
+  ->Program design - object oriented\par
+       -Account - java-class-Account -Diagrams - UML\par
+\par
+3.Development: You translate design into coding\par
+  Java\par
+   ->Source code representation\par
+   ->Runtime code representation\par
+\par
+Object identification:\par
+  ->Capturing Data points\par
+\par
+In Banking:\par
+Customer:X\par
+\par
+firstName,middleName,lastName\par
+Dob,address,mobileno,email,gender\par
+nationality,panno,adhno,accounttype\par
+nominee,amount,date,debit,onlinebanking,mobilbanking\par
+\par
+Object characteristics:\par
+1.state  -data\par
+ id,name,salary,department,noofleaves,...\par
+\par
+ data can be changed or not changed\par
+ name - not changed - constants\par
+ salary -changed\par
+\par
+How to implement state in program?\par
+  -variables\par
+\par
+2.behavior\par
+  verbs / actions which changes the state(data)\par
+ how to implement behavior in program?\par
+ -functions / methods\par
+\par
+3.identity\par
+  It is one the state which is used to identify the object.\par
+\par
+OOP principles  | concepts:\par
+..........................\par
+1.Abstraction\par
+2.Encapsulation\par
+3.Modualrity\par
+4.Hierachy\par
+5.Typing\par
+6.Concurrency\par
+7.Persistency.\par
+\par
+Concept\par
+1.Abstraction:\par
+   Taking necessary properties(charactertics) from the Object\par
+  and drop / leave / hide unncessary things.\par
+\par
+Implementation:\par
+2.Design\par
+  Customer in Banking System\par
+\par
+Customer\par
+ id\par
+ name\par
+ address\par
+ mobile\par
+ email\par
+ account type\par
+ account\par
+\par
+Program:\par
+class :\par
+  Blueprint of Object\par
+  Source code representation of Object(Domain/realworld)\par
+  fileName Customer.java\par
+  \par
+Note: class contains characteristics of object.\par
+     state,behavior,identity\par
+\par
+state && identity:\par
+variables\par
+  type variableName;\par
+\par
+\par
+Custom types:\par
+\par
+\par
+Stage-1\par
+\tab\par
+                  0,1 -Numbers\par
+\tab\tab     |\par
+\tab\tab   Machine\par
+\par
+\par
+Stage-2\par
+\par
+                  Text\par
+\tab          a - 97 - ascii\par
+\tab\tab      \par
+\tab\tab    |\par
+  \tab\tab   0,1 -Numbers\par
+\tab\tab     |\par
+\tab\tab   Machine\par
+\par
+\par
+\par
+\par
+\par
+Stage-3 -High level programmers - Java\par
+\par
+\par
+  Number\tab                 \tab   Text -char,String  byte,short,long,int,double,float\tab\tab         \tab\tab\tab      \tab             a - 97 - ascii\par
+ ------------------------------------------------------------\tab\tab            \par
+\tab\tab     |\par
+  \tab\tab   0,1 -Numbers\par
+\tab\tab     |\par
+\tab\tab   Machine\par
+\par
+Abstract data type theroy:\par
+--------------------------\par
+You can create new types on core types(byte,short,int,long,float,double,char)\par
+\par
+How to create new Type? - class\par
+  - struct,union - c-language\par
+   -c with class =>c++\par
+\par
+class Customer = \{byte,int,short,long,float,double,char,boolean,other class\}\par
+\par
+Customer ? = Type Name Which is eq int x;\par
+\par
+ Customer c; =>c is variable and its type is Customer\par
+ int x; =>x is variable and its type is int core type.\par
+\par
+ new  ->operator allocates memory for class\par
+        -Instance | Object - memory represention of class in          ram\par
+\par
+ Syntax for memory allocation for a  class:\par
+\par
+  Type Pointervariable = new Class()\par
+\par
+  Customer cust =    new     Customer();\par
+   |         |        |         |\par
+ Type     Variable  Operator Constructor call\par
+\par
+\par
+  Hey jvm ask the os allocate memory for a class called Customer, once allocation done, return the memory address to the variable called reference(pointer) variable "cust" and ensure that type is Customer.  - Object Creation / Instance creation /instation.\par
+\par
+///////////////////////////////////////////////////////////////\par
+How to work with state-data?\par
+\par
+1.initalize data\par
+2.process data\par
+3.read data\par
+\par
+1.initalize data - write operation\par
+\par
+Customer cust =new Customer();\par
+\par
+object access operator\par
+ .\par
+cust.state =  literal\par
+cust.behavior\par
+//////////////////////////////////Ac////////////////////////////\par
+\par
+behavior : methods / functions:\par
+\par
+1.change the data\par
+\par
+Account : withdraw and deposit ---operate on data--balance\par
+\par
+syntax:\par
+  \par
+    AccessSpecifer returntype methodName(args) \{ \par
+\par
+\par
+    \}\par
+\par
+   public double withdraw(double amount)\{\par
+ \par
+     //logic to update balance  \par
+  \}\par
+\par
+\par
+///////////////////////////////////////////////////////////////\par
+\par
+methods : change state - withdraw\par
+\par
+////////////////////////////////////////////////////////////\par
+\par
+state -Data initalization:\par
+\par
+1.After Object creation : after memory allocation\par
+1.1.->Direct initalization: you can access state using reference variable\par
+  Account acc = new Account();\par
+  acc.accno =1 ;\par
+  acc.name ="Test";\par
+1.2. ->through methods\par
+\par
+methods can be classified as follow \par
+\par
+1.biz methods\par
+    biz methods which is used for data process / manipulation \par
+eg withdraw\par
+\par
+2.state initalizer methods\par
+   methods which are used for state initalization and reading\par
+ only.\par
+   these methods are called as "setter" and "getter" methods\par
+  setters are otherwise called "mutator"\par
+  getters are otherwise called "accessor"\par
+\par
+General coding standards for methods:\par
+.....................................\par
+\par
+  Either biz method or accessor and mutator\par
+\par
+1.method name must be meaningfull.\par
+2.method name must be verb or verb+noun\par
+     withdraw,deposit,sleep,add,substract,save,find,delete...\par
+     saveAccount,withdrawMoney,addNumber\par
+3.method name must start smaller case\par
+  incase method+noun - noun must start uppercase.\par
+\par
+4.method may return or may return value\par
+  method no return - return type must be void\par
+    public  void add() \{\par
+\tab\tab\par
+\tab\}\par
+    with return\par
+       public  int add() \{\par
+\tab\tab return 10;\par
+\tab\}\par
+\par
+Arguments and parameters\par
+1.type of parameter and arg type must match\par
+2.Exact parameter ,args must match.\par
+\par
+        public int add(int x,int y) \{\par
+\tab\tab return x + y;\par
+\tab\}\par
+\par
+methods: setter and getter methods:\par
+\par
+Rules:\par
+setter:\par
+\par
+1.setter must have public key word.\par
+2.setter must have void return return type.\par
+3.setter must start with "set" verb and following set,the state\par
+  variable must be presented as Noun.\par
+4.setter must take arg,its type must match state variable type.\par
+5.setter arg variable Name must match state variableName\par
+6.setter method body, must have code to initalize the state \par
+  variable.\par
+    eg:\par
+\tab\tab a=a\par
+\par
+7.For every state variable , you must have setter method\par
+\par
+\par
+\par
+Calculator calc=new Calculator();\par
+calc is "reference" variable\par
+this is "reference" variable\par
+ calc and this both are same ? =>yes\par
+   because both will point address of Calcuator Object(memory)\par
+\par
+calc is called "Explicit" reference variable,we declare.\par
+this is called "implicit" reference variable, the jvm declare\par
+\par
+In java : every object has "this" reference variable, declared,injected into object when object is created.\par
+\par
+When to use "this" ?\par
+1.when you want to avoid ambiguity in setters\par
+\par
+getters : to read state value\par
+\par
+1.getters must start "public" keyword\par
+2.getters must have return type,the type is the type of state\par
+3.getters must start with get,followed by state variable as noun\par
+4.getters must not have args\par
+5.gettters must return state variable\par
+ .For every state variable , you must have getter method\par
+\par
+/////////////////////////////////////////////////////////////\par
+\par
+setter and getter standard is called "Java Bean Standard"\par
+\par
+direct vs setter and getter mode of data initzation:\par
+\par
+1.As per java bean standard,you must use only setter and getter\par
+ pattern only not direct.\par
+\par
+\par
+2.During object creation:\par
+........................\par
+\par
+through constructor :\par
+  constructor is also method\par
+ \par
+constructor:\par
+1.constructor is used to initalize the state.\par
+2.constructor is special method\par
+3.constructor method has some special syntax\par
+  3.1.constructor must not have return type\par
+  3.2.constructor name must be , the name of the Class\par
+  3.3.constructor may take arg or not\par
+  3.4.A class can have multiple constructor\par
+  3.5.Every class must have one constructor at least\par
+\tab if you dont write /provide constructor, the compiler   will provide constructor during compilation time.\par
+\par
+Circle.java -sc\par
+public class Circle \{\par
+\par
+\}\par
+compile\par
+Circle.class\par
+public class Circle \{\par
+    //compiler will insert extra code: default constructor\par
+   public Circle()\{\par
+\par
+   \}\par
+\}\par
+\par
+Circle(); //constructor(method) call - to initalize state during object is being ready.\par
+\par
+method call\par
+acc.withdraw(100) //method call->to manipulate the state after \par
+object ready\par
+cust.setId(1) //method call ->to initalize state after object ready\par
+/////////////////////////////////////////////////////////////\par
+\par
+Default values for instance variables:\par
+if values are not initlized by programmer explicitly,jvm will initalize the values implicitly these values are called as "default values"\par
+\par
+Default values of in built types:\par
+1.byte,short,int,long - 0\par
+2.float,double - 0.0\par
+3.boolean -false\par
+4.char - '\\u0000' -invisible unicode char\par
+5.Reference types-String,Customer... ->null\par
+\par
+\par
+eg:\par
+Circle.java\par
+public class Circle \{\par
+\tab //int x, y;\par
+\tab float x,y;\par
+\par
+\tab public float getX() \{\par
+\tab\tab return x;\par
+\tab\}\par
+\par
+\tab public void setX(float x) \{\par
+\tab\tab this.x = x;\par
+\tab\}\par
+\par
+\tab public float getY() \{\par
+\tab\tab return y;\par
+\tab\}\par
+\par
+\tab public void setY(float y) \{\par
+\tab\tab this.y = y;\par
+\tab\}\par
+\par
+\}\par
+\par
+\par
+Circle.class\par
+public class Circle \{\par
+\tab //int x, y;\par
+\tab float x,y;\par
+\par
+         //extra code\par
+        public Circle()\{\par
+           this.x = 0.0;\par
+           this.y =0.0;\par
+        \}\par
+\par
+\tab public float getX() \{\par
+\tab\tab return x;\par
+\tab\}\par
+\par
+\tab public void setX(float x) \{\par
+\tab\tab this.x = x;\par
+\tab\}\par
+\par
+\tab public float getY() \{\par
+\tab\tab return y;\par
+\tab\}\par
+\par
+\tab public void setY(float y) \{\par
+\tab\tab this.y = y;\par
+\tab\}\par
+\par
+\}\par
+\par
+///////////////////////////////////////////////////////\par
+\par
+Circle.java\par
+public class Circle \{\par
+\tab //int x, y;\par
+\tab float x=1,y=1;\par
+\par
+\tab public float getX() \{\par
+\tab\tab return x;\par
+\tab\}\par
+\par
+\tab public void setX(float x) \{\par
+\tab\tab this.x = x;\par
+\tab\}\par
+\par
+\tab public float getY() \{\par
+\tab\tab return y;\par
+\tab\}\par
+\par
+\tab public void setY(float y) \{\par
+\tab\tab this.y = y;\par
+\tab\}\par
+\par
+\}\par
+Circle.class\par
+public class Circle \{\par
+\tab //int x, y;\par
+\tab float x=1,y=1;\par
+\par
+//extra code\par
+        public Circle()\{\par
+           this.x = 1.0;\par
+           this.y =1.0;\par
+        \}\par
+\par
+\tab public float getX() \{\par
+\tab\tab return x;\par
+\tab\}\par
+\par
+\tab public void setX(float x) \{\par
+\tab\tab this.x = x;\par
+\tab\}\par
+\par
+\tab public float getY() \{\par
+\tab\tab return y;\par
+\tab\}\par
+\par
+\tab public void setY(float y) \{\par
+\tab\tab this.y = y;\par
+\tab\}\par
+\par
+\}\par
+\par
+//////////////////////////////////////////////////////////////\par
+\par
+Circle.java\par
+public class Circle \{\par
+\tab // int x, y;\par
+\tab float x, y;\par
+\par
+\tab // Add constructor\par
+\tab public Circle() \{\par
+\tab\tab this.x = 1;\par
+\tab\tab this.y = 1;\par
+\tab\}\par
+\par
+\tab public float getX() \{\par
+\tab\tab return x;\par
+\tab\}\par
+\par
+\tab public void setX(float x) \{\par
+\tab\tab this.x = x;\par
+\tab\}\par
+\par
+\tab public float getY() \{\par
+\tab\tab return y;\par
+\tab\}\par
+\par
+\tab public void setY(float y) \{\par
+\tab\tab this.y = y;\par
+\tab\}\par
+\par
+\}\par
+Circle.class\par
+public class Circle \{\par
+\tab // int x, y;\par
+\tab float x, y;\par
+\par
+\tab // Add constructor\par
+\tab public Circle() \{\par
+\tab\tab this.x = 1;\par
+\tab\tab this.y = 1;\par
+\tab\}\par
+\par
+\tab public float getX() \{\par
+\tab\tab return x;\par
+\tab\}\par
+\par
+\tab public void setX(float x) \{\par
+\tab\tab this.x = x;\par
+\tab\}\par
+\par
+\tab public float getY() \{\par
+\tab\tab return y;\par
+\tab\}\par
+\par
+\tab public void setY(float y) \{\par
+\tab\tab this.y = y;\par
+\tab\}\par
+\par
+\}\par
+///////////////////////////////////////////////////////////\par
+\par
+Constructor parameter and args: through which you can decide\par
+what is the default value of state variable\par
+\par
+Note: if there is any explicit constructor,the jvm wont insert\par
+ default constructor.we need to provide no-arg constructor.\par
+///////////////////////////////////////////////////////////////\par
+Encapsulation:\par
+.............\par
+ How to access state,methods,class,constructors etc..\par
+ Visibility : Who can access\par
+\par
+ Program1                Program2\par
+\par
+ code         <----------          \par
+  |\par
+variables\par
+metods\par
+class\par
+constructor\par
+\par
+How to enble encapsulation:\par
+  keywords -Access Modifiers\par
+\par
+public,private,default,proected\par
+\par
+public: code -class,variables(state),methods,constructors\par
+\par
+can i use public with class?\par
+ Yes!\par
+what is public?\par
+ public means the class can be accessed by any program , any where in the project.\par
+ \par
+ public class ClassName\{\par
+\par
+ \}\par
+\par
+by any program , any where in the project: ?\par
+\par
+Modualrity :\par
+It is one of the core oo concept.\par
+\par
+Breaking the large thing into multiple units.\par
+\par
+Every pl supports modualrity.\par
+\par
+C,c++ => header files #include order.h,customer.h,billing.h\par
+\par
+java =>packages\par
+  package is collection of java files and collection of sub packages.\par
+\par
+Types of Modularity:\par
+1.logical modularity - code is spilt and linked by runtime through special syntax.\par
+  package - keyword\par
+  import  - keyword\par
+\par
+2.Physical modularity  - code is spilt and organized on hard disk.\par
+  folders-subfolders \par
+\par
+\par
+Implementaion:\par
+\par
+Define modualrity:\par
+\par
+ package  com.tcs.igno.infra.machine\par
+  |    \par
+ keyword\par
+\par
+com.tcs.igno.infra.machine\par
+org.apache.tools.machine\par
+java.lang\par
+java.util\par
+javax.text\par
+\par
+com-company\par
+org-organization\par
+java-it represents core java project\par
+\par
+tcs-Name of the company\par
+igno -name of the project\par
+infra -Main module of the project\par
+machine-sub module inside infra\par
+\par
+eg:\par
+Customer.java\par
+\par
+package com.tcs.igno.acc;\par
+\par
+public class Customer \{\par
+\par
+\}\par
+Folder Structure:\par
+ src/com/tcs/igno/acc/Customer.java\par
+ bin/com/tcs/igno/acc/Customer.class\par
+\par
+\par
+\par
+import - is used to link programs\par
+\par
+import  logicalpackagestructure\par
+imoport com.tcs.igno.acc.Customer;\par
+\par
+\par
+default: package level scopping / within the same folder /package\par
+\par
+no keyword: consider default scope.\par
+\par
+Note:\par
+1.if the class is declared in default scope, the  other class in the package only can access.\par
+2.import statment not neccessary to link classes if it is in the same package-implicit linking\par
+  \par
+\par
+private : the classes can't be declared with private\par
+   -No private classes.\par
+\par
+\par
+protected: the classes can't be declared with protected \par
+  -No protected classes\par
+\par
+import rules:\par
+1.you can import a particular class\par
+2.you can import all classes from one package - *.\par
+\par
+ coding standard:\par
+ 1.dont use *.\par
+\par
+Types of packages:\par
+1.in built packages\par
+  supplied by jdk,jre\par
+ all in built packages starts with java or javax.\par
+ in built package name cant be used as custom package\par
+\par
+java provides lot of packages based on development use case:\par
+\par
+java.lang\par
+   java.lang.System\par
+     System - class--jvm\par
+Note: the compiler and runtime will import java.lang automatically- default import.\par
+String,Object,Class,Short,Byte,Integer,Double,Float....\par
+\par
+java.util:\par
+   Data Structure\par
+   Utility classes like Scanner\par
+\par
+java.sql \par
+Data base programming \par
+java.io \par
+io operations\par
+java.net\par
+ network programming such as sockets,udp,http\par
+java.text\par
+  Text processiong\par
+etc.................................\par
+2.custom packages\par
+ packages created by you.\par
+ com.tcs.\par
+ com.google\par
+ com.ibm\par
+\par
+3.thrid party packages\par
+ packages created and distributed by thrid parties\par
+ Spring,Hibernate,opensource projects such apache....\par
+\par
+Java Application Packaging Model:\par
+................................\par
+\par
+c,c++ => windows--exe,dll\par
+java  =>on any os \par
+   =>jar  =>Java archive\par
+   =>war  =>web archive =>web development\par
+   =>Ear  =>enterprise archive =>Distributed Application\par
+\par
+how to distribute jar files to other people?\par
+\par
+1.pack the jar \par
+2.host the jar in your web domain.\par
+   example.com -> download example\par
+\par
+\par
+build system:\par
+It is tool, used to distribute,install jar files from the central repo servers\par
+\par
+1.ant\par
+2.maven\par
+3.gradle - written in groovy\par
+\par
+///////////////////////////////////////////////////////////////\par
+\par
+public on instance variable\par
+ yes, but it is not recommended as per java bean standard.\par
+\par
+public on instance methods\par
+ yes, it is recommended,then only we can access outside.\par
+\par
+public on constructors \par
+  Yes, it is also recommend.\par
+\par
+///////////////////////////////////////////////////////////////\par
+default:\par
+class - yes but class not available outside package\par
+instance variables - yes , not available outside package.\par
+instance methods - yes,not available outside package.\par
+constructor - yes,not available outside package.\par
+...........................................................\par
+private: within class\par
+\par
+class - no, no private class.\par
+instance variable -yes\par
+  Note: all instance variable must be marked private\par
+\par
+instance methods: -yes\par
+ private methods play vital role in development\par
+ private methods are used to design sub proceducers.\par
+\par
+//////////////////////////////////////////////////////////////\par
+Memory Model:\par
+\par
+Memory structures:\par
+1.heap\par
+2.stack\par
+3.method Area\par
+\par
+How memory is allocated?\par
+\par
+->code -- .class file\par
+\par
+e:/tcsproject\par
+       /bin/\par
+         com/\par
+           tcs/\par
+             greet/\par
+                  Hello.class --import Greeter.class\par
+\par
+\par
+java:jvm\par
+\par
+->code -- .class file--jvm\par
+\par
+java.lang.NoClassDefFoundError:\par
+ if jvm class loader not able load .class file into runtime\par
+reasons:\par
+1.file might have been corrupted or renamed,missed.\par
+\par
+java.lang.UnsupportedClassVersionError:\par
+  class file has been modified.\par
+\par
+\par
+code from disk-- .class file--jvm---class loader---.class\par
+\par
+ new Customer()---heap\par
+\par
+class Customer \{\par
+   int id; //instance variable\par
+\}\par
+\par
+how many objects y can create for a single .class file?\par
+  more -based on heap size\par
+\par
+  new Customer();\par
+  new Customer();\par
+  ...\par
+\par
+shared data: how to share data across the instances.\par
+\par
+static -key word for shared memory\par
+\par
+constants in java: once variable initalized , that variable\par
+cant be reinitalized.\par
+\par
+ final  -keyword to declare constant.\par
+\par
+shared data must be marked\par
+ public static final type VARIABLE=VALUE\par
+\par
+why main method marked as static?\par
+  in order to improve jvm startup process.\par
+\par
+who is calling main method?\par
+ -there is class supplied by jvm called "StartUp" class\par
+   class Startup\{\par
+\par
+     run()\{\par
+       App.main()\par
+     \}\par
+  \}\par
+  --native call-->StartUp()\par
+\par
+//////////////////////////////////////////////////////////////\par
+static methods:\par
+..............\par
+Similar to static variable,called without instance.\par
+\par
+Use case for static methods:\par
+\par
+1.Utility api\par
+  eg: java.lang.Math ->mathmetical operations\par
+2.To get Instance\par
+  private constructor:\par
+  static method    \par
+\par
+single ton:Explore single ton\par
+\par
+//////////////////////////////////////////////////////////////\par
+class Greeter\{\par
+  private String name;\par
+  \par
+  public String sayHello()\{\}\par
+  public String sayHello()\{\}\par
+  public String sayHello()\{\}\par
+  ...\par
+\}\par
+Greeter.class\par
+\par
+Greeter greet = new Greeter();\par
+greet.sayHello(); //get from heap -object\par
+\par
+ "methods are not part of heap memory, methods are stored inside method area only"\par
+\par
+ "Inside heap method implementation wont there rather than method reference(pointer)only will be there"\par
+\par
+greet.sayHello();\par
+  -->heap--->object--->refer-->vtable-->method---allocate memory---pushed stack--allocate memory---stack frame--cpu\par
+\par
+What is thread?\par
+   Single stack frame.\par
+\par
+1.greet.sayHello();--frame is running\par
+2.greet.sayHello();--\par
+\par
+public void add()\{\par
+  double result=10 + 10; // //local variable\par
+\}\par
+Where this local variable memory? and when it is initalized?\par
+  ->Inside stack frame , When method is pushed into stack,then\par
+frame is created.\par
+.............................................................\par
+System.out.println()  - API -Application Programming Interface               |                 -lib\par
+\par
+          jvmPrintln() - c\par
+\tab       |\par
+\tab    osPrintln() - os\par
+\tab      |\par
+\tab    halPrintln() - hal\par
+             |\par
+           hardware()---will run\par
+\par
+\par
+ System----Machine--Virtual Machine\par
+ System -----hard ware -input,output,error device\par
+\par
+  standard input device -keyboard\par
+   ""        output     -monitor\par
+   ""        error      -monitor\par
+\par
+ From java how to access keyboard,monitor\par
+  System----in--input\par
+  System----out --monitor\par
+\par
+System.out.println()\par
+ \par
+System\par
+  out - static PrintStream out\par
+\par
+PrintStream- println\par
+\par
+Scanner scanner = new Scanner(System.in);\par
+\tab\tab\tab\tab  |\par
+                               keyboard\par
+///////////////////////////////////////////////////////////////\par
+Hierarchy && Typing:\par
+....................\par
+Hierarchy which talks object relationship.\par
+\par
+1.Has-a\par
+2.IS-A - Inheritance\par
+\par
+Customer,Employee,Visitor\par
+\par
+1.Code duplication\par
+\par
+ if multiple classes share the same data \par
+\par
+ 1.separate the data outside the class\par
+\par
+\par
+Chaining pattern:\par
+\par
+Address add= customer.getAddress();\par
+         |\par
+  Reference variable which has the "Address" Object\par
+add.getCity();\par
+\par
+Chaining pattern means , no need of extra variable,we can call \par
+methods directly.\par
+\par
+customer.getAddress().getCity() === add.getCity();\par
+////////////////////////////////////////////////////////////\par
+\par
+JSON : Java Script Object Notation\par
+..................................\par
+\par
+What is JSON?\par
+\par
+Story Behind:\par
+ Ecommerce ---1999.\par
+\par
+Data Inter change Format\par
+\par
+2000-conference - Data Interchange Conference\par
+ 30+\par
+XML,JSON,text,tmp,properties..............\par
+\par
+\par
+XML - W3C standard\par
+\par
+2005 -Fall of XML\par
+\par
+2005 -JSON----Yet another data interchange format\par
+\par
+\par
+JSON is simple text file.\par
+JSON is simple strinf file\par
+JSON is simple ascii file\par
+JSON is platform(os) independant\par
+JSON is language independant.\par
+JSON is protocal inddependant.\par
+json discored from javascript literal object models\par
+\par
+Object: state\par
+\par
+javascript object state representation:\par
+\par
+Syntax:\par
+\par
+var customer = \{\par
+  id : 1,\par
+  name:'Subramanian',\par
+  address:\{\par
+     city:'chennai',\par
+     street:'10th'\par
+  \}\par
+\}\par
+\par
+JSON Representation:\par
+\par
+\{\par
+  "id" : 1,\par
+  "name":"Subramanian",\par
+  "address":\{\par
+     "city":"chennai",\par
+     "street":"10th"\par
+  \}\par
+\}\par
+\par
+/////////////////////////////////////////////////////////////\par
+How to implement JSON?\par
+\par
+JSON simple text file or String representation.\par
+\par
+Every programming language who provides JSON Parser lib.\par
+\par
+Java -\par
+C++ \par
+Python-\par
+Javascript-parser\par
+\par
+//////////////////////////////////////////////////////////\par
+\par
+java Parser:\par
+///////////\par
+GSon - google parser for java \par
+\par
+gson parser is just jar file.\par
+\par
+gson maven.\par
+////////////////////////////////////////////////////////\par
+\par
+json parser : Gson\par
+\par
+Steps:\par
+1.create Parser Object\par
+    Gson parser=new Gson();\par
+2.you can use two basic api\par
+  2.1. to convert java object into json\par
+\tab String result = parser.toJson(object)\par
+  2.2. to convert existing json into java object\par
+         Customer cust = parser.toJson(result,Customer.class);\par
+\par
+\par
+///////////////////////////////////////////////////////////////\par
+\par
+Data Structure:\par
+\par
+  What is data ? What is Structure?(storage)?\par
+\par
+Storage:\par
+  1.single item ->int id;\par
+  2.multiple items -> [id,id,id] - Array\par
+\par
+Data Sructure:\par
+1.static/constant/fixed data Structure\par
+2.dynamic dataStructure\par
+\par
+Java and Data Structure:\par
+\par
+Java focus only logic not infrastructure.\par
+Java represent array as Object,Storage Object.\par
+Array can hold any type of data  from primitive to Objects\par
+Array can store data continuously\par
+\par
+Array can be declared in two ways\par
+\par
+1. type[] variableName=new type[size];\par
+\par
+int[] scores = new int[5];\par
+\tab\tab scores[0] = 90;\par
+\tab\tab scores[1] = 76;\par
+\tab\tab scores[2] = 23;\par
+\tab\tab scores[3] = 90;\par
+\tab\tab scores[4] = 99;\par
+\tab\tab int size = scores.length;\par
+\tab\tab System.out.println("Size of the Array :" + size);\par
+\tab\tab System.out.println(scores[0]);\par
+\tab\tab System.out.println(scores[1]);\par
+\tab\tab System.out.println(scores[2]);\par
+\tab\tab System.out.println(scores[3]);\par
+\tab\tab System.out.println(scores[4]);\par
+\tab\tab // using loop get the value\par
+\tab\tab for (int i = 0; i < size; i++) \{\par
+\tab\tab\tab System.out.println(scores[i]);\par
+\tab\tab\}\par
+\par
+2.// syntax 2\par
+  double prices[] = \{ 13, 89, 90, 86, 23, 56 \};\par
+  //int priceSize = prices.length;\par
+  //System.out.println(priceSize);\par
+  System.out.println("Prices...");\par
+  for (int i = 0; i < prices.length; i++) \{\par
+\tab System.out.println(prices[i]);\par
+  \}\par
+\par
+/////////////////////////////////////////////////////////\par
+\par
+List of Customers:\par
+..................\par
+package com.tcs.tra.core;\par
+\par
+import com.google.gson.Gson;\par
+import com.tcs.igno.hasa.Address;\par
+import com.tcs.igno.hasa.Customer;\par
+\par
+public class ComplexArray \{\par
+\tab public static void main(String[] args) \{\par
+\tab\tab // Address\par
+//\tab\tab Address address1 = new Address("156", "10th", "Sowmya Nagar", "Chennai", "TN");\par
+//\tab\tab // Address is linked with Customer\par
+//\tab\tab Customer customer1 = new Customer(1, "Subramanian", address1);\par
+//\par
+//\tab\tab Address address2 = new Address("158", "10th", "Sowmya Nagar", "Chennai", "TN");\par
+//\tab\tab // Address is linked with Customer\par
+//\tab\tab Customer customer2 = new Customer(2, "Ram", address2);\par
+//\par
+//\tab\tab Address address3 = new Address("158", "10th", "Sowmya Nagar", "Chennai", "TN");\par
+//\tab\tab // Address is linked with Customer\par
+//\tab\tab Customer customer3 = new Customer(3, "Mohan", address3);\par
+\par
+\tab\tab // Customer[] customers = \{ customer1, customer2, customer3 \};\par
+\par
+\tab\tab Customer[] customers = \{\par
+\tab\tab\tab\tab new Customer(1, "Subramanian", new Address("156", "10th", "Sowmya Nagar", "Chennai", "TN")),\par
+\tab\tab\tab\tab new Customer(2, "Ram", new Address("158", "10th", "Sowmya Nagar", "Chennai", "TN")),\par
+\tab\tab\tab\tab new Customer(3, "Mohan", new Address("158", "10th", "Sowmya Nagar", "Chennai", "TN"))\par
+\tab\tab\};\par
+\par
+\tab\tab // Report\par
+\tab\tab System.out.println(".....Customer Details....");\par
+\tab\tab for (int i = 0; i < customers.length; i++) \{\par
+\tab\tab\tab Customer customer = customers[i];\par
+\tab\tab\tab System.out.println("Id : " + customer.getId());\par
+\tab\tab\tab System.out.println("Name :" + customer.getName());\par
+\tab\tab\tab System.out.println("Door No :" + customer.getAddress().getDoorno());\par
+\tab\tab\tab System.out.println("Street :" + customer.getAddress().getStreet());\par
+\tab\tab\tab System.out.println("Area : " + customer.getAddress().getStreet());\par
+\tab\tab\tab System.out.println("City : " + customer.getAddress().getCity());\par
+\tab\tab\tab System.out.println("State :" + customer.getAddress().getState());\par
+\tab\tab\tab System.out.println("---------------------------------------------------");\par
+\tab\tab\}\par
+\tab\tab // json\par
+\tab\tab Gson parser = new Gson();\par
+\tab\tab // Convert Customer Object into JSON\par
+\tab\tab String json = parser.toJson(customers);\par
+\tab\tab System.out.println(json);\par
+\par
+\tab\}\par
+\}\par
+///////////////////////////////////////////////////////////////\par
+\par
+Iteration:\par
+1.for...loop\par
+for(int i =0;i<customers.length;i++)\{\par
+  Customer customer = customers[i]\par
+  ....\par
+\}\par
+2.for..each\par
+   simplest loop built on top of for loop only....\par
+\par
+  for(Type variable:array)\{\par
+\par
+    Sys(variable.property)\par
+ \}\par
+\par
+//////////////////////////////////////////////////////////////\par
+IS-A Relationship:\par
+.................\par
+\par
+Inheritance:\par
+  Connecting two classes.\par
+\par
+Why Inheritance?\par
+1.code reuse - to avoid code duplication\par
+\par
+extends is keyword to connect two classes-inheritance\par
+\par
+Parent class,Base class,Super class: The class which to be connected with other classes (Child class,sub class)\par
+\par
+once if we link two classes through extends keyword,\par
+  "Base class" instance variables,methods will be copied into\par
+child class during compile time.\par
+   "only default,public,protected not private".\par
+   "no static variables,methods copied"\par
+\par
+public class Person \{\par
+  String firstName, MiddleName, lastName;\par
+\par
+\}\par
+class Customer extends Person\{\par
+\par
+\}\par
+class Employee\{\par
+\par
+\}\par
+class Visitor\{\par
+\par
+\}\par
+class Client\{\par
+\par
+\}\par
+\par
+//////////////////////////////////////////////////////////////\par
+How to initialize base class state?\par
+->via child class Object \par
+   ->setters\par
+->via constructors how ?\par
+   super keyword\par
+\par
+protected \par
+   it is like private - you cant access outside class directly\par
+   it is like public/default  - you can access only inside                   child class\par
+\par
+\par
+"super" =>It is reference variable like "this"\par
+\par
+ super is reference variable which points the Parent Object  from child\par
+ this is reference variable which points the same Object  (current Object)\par
+\par
+  new Customer() //calling constructor\par
+  this() //calling current class constructor\par
+  super() // calling super class constructor\par
+  \par
+  this(parameters) \par
+  super(parameters)\par
+\par
+//////////////////////////////////////////////////////////////\par
+methods and inheritance:\par
+........................\par
+\par
+You have written: \par
+\par
+Animal.java\par
+public class Animal \{\par
+\tab public String eat() \{\par
+\tab\tab return "Animal eats";\par
+\tab\}\par
+\}\par
+Tiger.java\par
+public class Tiger extends Animal \{\par
+\par
+\}\par
+...........................................\par
+After compilation\par
+\par
+Animal.class\par
+public class Animal \{\par
+\tab public String eat() \{\par
+\tab\tab return "Animal eats";\par
+\tab\}\par
+\}\par
+\par
+Tiger.class\par
+public class Tiger extends Animal \{\par
+      public String eat() \{\par
+\tab return super.eat()\par
+      \}\par
+\}\par
+Tiger tiger =new Tiger();\par
+System.out.println(tiger.eat());\par
+\par
+//////////////////////////////////////////////////////////////\par
+Overriding: the base class method can be redefined as it is \par
+in child class with new behavior(algorthim).\par
+\par
+public class Animal \{\par
+\tab public String eat() \{\par
+\tab\tab return "Animal eats";\par
+\tab\}\par
+\}\par
+public class Tiger extends Animal \{\par
+\tab public String eat() \{\par
+\tab\tab return "tiger eats";\par
+\tab\}\par
+\}\par
+Tiger tiger =new Tiger();\par
+System.out.println(tiger.eat());\par
+/////////////////////////////////////////////////////////////\par
+Typing:\par
+\par
+"A type is a precise characterization of structural or behavioral properties which a collection of entities all share"\par
+\par
+\par
+ "Typing is the enforcement Of the class of an object, such, that objects of different types may not be interchanged, or at the most, they may be interchanged only in very restricted ways"\par
+\par
+/////\par
+\par
+Is valid? -compile\par
+class Customer\{ \}\par
+Customer cust = new Customer();\par
+   |       |\par
+Type     variable\par
+\par
+Is valid? -compile : no - type mismatch \par
+Customer cust = new Tiger();\par
+\par
+///////////////////////////////////////////////////////////////\par
+\par
+Programming to sub type or concret type or same type\par
+  Customer cust =new Customer();\par
+ Left side and Right side same\par
+\par
+Programming to Super type or base type \par
+\par
+Animal tiger = new Tiger();\par
+///////////////////////////////////////////////////////////////\par
+\par
+ Binding :\par
+      The assocation of value with variable\par
+  \par
+  int a =10;\par
+  class Hello\{\par
+     public String sayHello()\{return "Hello"\}\par
+  \}\par
+   Hello hello=new Hello();\par
+   hello.sayHello();\par
+\par
+Polymorphism:\par
+\par
+ Implementation of Typing theory\par
+ Compile time Polymorphism :\par
+     Compile time variable and method binding\par
+ Runtime Polymorphism:\par
+     method invocation\par
+//////////////////////////////////////////////////////////////\par
+\par
+Program to supertype:\par
+....................\par
+\par
+class Animal \{\}\par
+\par
+class Tiger \{\}\par
+\par
+Tiger t =new Tiger();\par
+Animal a=new Tiger();\par
+Object o =new Tiger();\par
+\par
+default Inheritance:\par
+...................\par
+\par
+Welcome.java\par
+\par
+class  Welcome\{\}\par
+\par
+Welcome.class\par
+\par
+class Welcome extends java.lang.Object\{\par
+\par
+\}\par
+\par
+Animal.java\par
+class Animal \{\}\par
+\par
+Tiger.java\par
+class Tiger extends Animal\{\}\par
+\par
+\par
+Animal.class\par
+class Animal extends java.lang.Object \{\par
+\par
+\}\par
+\par
+class Tiger extends Animal\{\}\par
+///////////////////////////////////////////////////////\par
+\par
+java.lang.Object Api:\par
+.....................\par
+\par
+\par
+1.equals\par
+ == is operator is used to test two values are equal or not\par
+ int a =10;\par
+ int b =10;\par
+ a==b = true\par
+\par
+ == operator\par
+  ->prmitives test content\par
+  ->objects test the memory address.\tab\par
+\par
+equals method is used to test object equality\par
+  -\par
+//////////////////////////////////////////////////////////////\par
+String:\par
+ ->String is object\par
+ ->String is instance of java.lang.String class.\par
+ ->String objects are created without new operator but we can create with new operator as well but it is not recommend\par
+\par
+  String name="Ram" // String name=new String("Ram")\par
+\par
+Strings and == and equals method:\par
+................................\par
+\par
+Customer cust1=new Customer();\par
+Customer cust2=new Customer();\par
+cust1==cust2 =>false\par
+\par
+String str="Hello";\par
+String name="Hello";\par
+\par
+\par
+String Immutablity:\par
+\par
+1.Strings are allocated in string constant pool.\par
+2.If two or more String objects has similar string literals\par
+  shares the only one copy.\par
+3.If you perform any string maniuplation, new Object is created\par
+  original copy is retained-Immuability.\par
+\par
+String operations are chainable:\par
+\par
+String result ="hello".trim().toUppercase().trim();\par
+\par
+Note: please explore string apis.\par
+////////////////////////////////////////////////////////////\par
+\par
+Object : toString();\par
+ We can print object information in string form\par
+\par
+Object : hashcode();\par
+ hascode is fake memory address given to object.\par
+\par
+we can get the address allocated by jvm.\par
+\par
+//////////////////////////////////////////////////////////////\par
+\par
+Wrapper classes:\par
+...............\par
+\par
+Object representation of primitive types.\par
+\par
+int      --- java.lang.Integer\par
+boolean  --   Boolean\par
+byte     --- Byte\par
+short    --- Short\par
+long     --- Long\par
+float    --- Float\par
+double   --- Double\par
+char     ----Character\par
+\par
+Why Wrappers?\par
+  Because of  Collections.\par
+\par
+Casting: coverting from one to another type\par
+\par
+1.Implicit casting\par
+ int a=10;(int)\par
+ byte bb=11;\par
+ int b =bb; \par
+ Animal a = new Tiger();\par
+2.expclit casting\par
+double d=100;\par
+int a = (int)d;\par
+ Animal a = new Tiger(); \par
+ Tiger t = (Tiger)a;\par
+\par
+  \par
+3.Boxing and Unboxing\par
+Boxing : Primitive to Wrapper\par
+UnBoxing : wrapper to Primitive\par
+\par
+Boxing: traditional way\par
+Integer one = new Integer(1); // int one =1\par
+System.out.println(one.intValue()); // object to primitive\par
+\par
+Boxing : new school\par
+Integer one =1;\par
+\par
+\par
+4.String to Numbers Conversion\par
+  String a="100";\par
+  int i = Integer.parseInt(a)\par
+  double d =Double.parseDouble(a)\par
+\par
+//////////////////////////////////////////////////////////////\par
+\par
+Inheritance Implementation:\par
+1.concrete class\par
+2.interface \par
+3.Abstract class\par
+\par
+1.Concrete Class:\par
+\par
+public class Animal \{\par
+\tab public String eat() \{\par
+\tab\tab return "Animal eats";\par
+\tab\}\par
+\}\par
+\par
+public class Tiger extends Animal \{\par
+\par
+\tab public String hunt() \{\par
+\tab\tab return "Tiger Hunting";\par
+\tab\}\par
+\par
+\}\par
+\par
+2.Interface based inheritance\par
+\par
+1.What is interface?\par
+ Interface is just class.\par
+\par
+public interface NameOfTheInterface\{\par
+   //behavior with out implementation\par
+\}\par
+\par
+\par
+\par
+class Bird\{\par
+  fly\par
+  land\par
+  takeOff\par
+\}\par
+\par
+class Flight\{\par
+   fly\par
+   land\par
+   takeOff\par
+\}\par
+\par
+interface:\par
+  Common behavior across the differnt family of objects.\par
+\par
+Rules to write interface:\par
+\par
+1.interface can have method declarations only\par
+    -abstract methods -  no definition\par
+public interface Flyable \{\par
+   abstract String fly();//declaration\par
+\}\par
+2.interface methods are by default public only\par
+public interface Flyable \{\par
+  public abstract String fly();//declaration\par
+\}\par
+\par
+2.1.interface methods by default public,by default abstract \par
+    so that we need not use public and abstract keywords\par
+\par
+3.interfaces can have variables\par
+   public static final String variableName="tttt"\par
+\par
+4.default methods: java 8 addition\par
+   interface can have implemenation.\par
+\par
+5.interfaces can be marked public,default\par
+\par
+6.interfaces can be inherited by a class and also another interface.\par
+\par
+  class with interface\par
+  "implements" key word is used to inherit\par
+ As soon you implement, the compiler forces you to over ride\par
+method.\par
+\par
+7.Interface can extend another interface\par
+\par
+8.interface cant implement other interface\par
+\par
+9.class can implement multiple interface but class cant extends\par
+  multiple classes.\par
+\par
+///////////////////////////////////////////////////////////\par
+\par
+Application Layering:\par
+\par
+1.Front end-UI\par
+2.Service - Biz apis\par
+3.Stroage -Storage\par
+\par
+///////////////////////////////////////////////////////////////Abstract classes:\par
+................\par
+\par
+public abstract class Animal \{\par
+\tab public abstract String eat();\par
+\par
+\tab public String saveAnimal() \{\par
+\tab\tab return "Save Animal from Hunters";\par
+\tab\}\par
+\}\par
+public static void main(String[] args) \{\par
+\tab\tab Animal ani;\par
+\tab\tab ani = new Cat();\par
+\tab\tab System.out.println(ani.eat());\par
+\tab\tab System.out.println(ani.saveAnimal());\par
+\tab\tab\par
+\tab\tab ani = new Dog();\par
+\tab\tab System.out.println(ani.eat());\par
+\tab\tab System.out.println(ani.saveAnimal());\par
+\tab\tab\par
+\tab\tab Greeter greeter;\par
+\tab\tab greeter =new Hello();\par
+\tab\tab System.out.println(greeter.sayHello());\par
+\tab\tab System.out.println(greeter.greet());\par
+\tab\}\par
+//////////////////////////////////////////////////////////////\par
+Final class:\par
+\par
+All classes are inheritable:\par
+ To prevent a class to be inherited- final classes\par
+ To prevent a method from the class to be overriden - final methods.\par
+///////////////////////////////////////////////////////////////\par
+Error Handling:\par
+\par
+1.What is error?\par
+  Mistake\par
+\par
+Types of error?\par
+1.compile time error\par
+   Due to syntax viloation\par
+   Can be fixed easily\par
+2.Runtime error.\par
+   Due to application logic\par
+   Cant be identified during development cycle\par
+   May come at any time.\par
+\par
+Java and Runtime Error Handling:\par
+\par
+1.Java Runtime error handling is called as "Exception Handling".\par
+2.Exception handling in java is object oriented-Errors can be represented as Object,these objects can be used to inspect root cause of error later.\par
+\par
+How to handle runtime error?\par
+ keywords : try,catch,finally,throw,throws\par
+\par
+try\{\par
+  //biz logic \par
+   \par
+\}\par
+catch(ArithmeticException errorInfo)\{\par
+ //reporting logic\par
+\}\par
+\par
+Error Stack trace:\par
+ The complete information about error\par
+  ->From where till error point.\par
+\par
+\par
+Exception in thread "main" java.lang.ArithmeticException: / by zero\par
+\tab at com.tcs.igno.app.Calculator.divide(Calculator.java:14)\par
+\tab at com.tcs.igno.app.CalculatorApp.main(CalculatorApp.java:13)\par
+\par
+/////////////////////////////////////////////////////////////\par
+\par
+Types of Exception:\par
+\par
+1.Exception handled , reported by jvm\par
+    ->UnChecked Exception\par
+  ->Exception which is not very danager-easily can be fixed\par
+\par
+2.Exception handled , reported by programmer\par
+    ->Checked Exception\par
+  ->Exception is really danager-cant be fixed\par
+\par
+\par
+UnChecked Exception: How to identify unchecked exception\par
+\par
+Exception hierachy: Exception inheritance tree.\par
+\par
+\par
+   java.lang.Throwable\par
+\tab  |\par
+         java.lang.Exception\par
+\tab   |\tab\tab |\par
+\tab   \tab\tab java.lang.RuntimeException\par
+\tab\tab                |\par
+\tab\tab\tab   unchecked Exception classes\par
+ checked\par
+\par
+Note:\par
+  Checked exception must be handled by programmer using\par
+  try...catch\par
+  UnChecked exception need not be handled by programmer\par
+  using try..catch-jvm will handle\par
+\par
+\par
+Common Unchecked Exceptions:\par
+\par
+1.ArithmeticException : / 0\par
+2.NullPointerException :\par
+   ->Exception is thrown when no object is pointed by variable\par
+    and if you try to access object properties.\par
+3.ArrayIndexOutOfBoundsException:\par
+   when store array items beyond size\par
+\par
+CheckedException: along with custom exception.\par
+\par
+////////////////////////////////////////////////////////\par
+\par
+Custom Exception: Application Exception:\par
+The exception is created for application specific error handling.\par
+\par
+In banking, if you try to with draw money, if money not there , you can throw "BalanceNotFoundException"\par
+\par
+It can be Checked or UnChecked\par
+\par
+How to create Checked Exception:\par
+\par
+Steps:\par
+\par
+1.Create Exception class, that class should extend "java.lang.Exception"\par
+\par
+public class BalanceNotFoundException extends Exception \{\par
+\par
+\}\par
+2.Provide two constructors\par
+public class BalanceNotFoundException extends Exception \{\par
+\tab public BalanceNotFoundException() \{\par
+\tab\tab super();\par
+\tab\}\par
+\par
+\tab public BalanceNotFoundException(String errorMessage) \{\par
+\tab\tab super(errorMessage);\par
+\tab\}\par
+\}\par
+\par
+3.declare class with method which has logic,something goes wrong in the logic i need to throw error\par
+\par
+\tab public void withdraw(double amount) \{\par
+\tab\tab if (this.balance >amount) \{\par
+\tab\tab\tab this.balance = this.balance - amount;\par
+\tab\tab\tab System.out.println(amount + "withdrawn and balance is  " + this.balance);\par
+\par
+\tab\tab\} else \{\par
+\tab\tab\tab System.out.println("Balance not Found");\par
+\tab\tab\}\par
+\tab\}\par
+\par
+\par
+4.throw : is used to throw error to the handler(catch)\par
+  Since Error is an object , that must be created first then you need to throw\par
+\par
+ throw new Exception\par
+\par
+public void withdraw(double amount) \{\par
+\tab\tab if (this.balance >amount) \{\par
+\tab\tab\tab this.balance = this.balance - amount;\par
+\tab\tab\tab System.out.println(amount + "withdrawn and balance is  " + this.balance);\par
+\par
+\tab\tab\} else \{\par
+\tab\tab\tab throw new BalanceNotFoundException("Balance Not found");\par
+\tab\tab\}\par
+\tab\}\par
+\par
+5.Exception binding:\par
+   exception must be bound with method-\par
+\par
+ throws - keyword is used to bind exception\par
+ throws  - keyword can be used to avoid try..catch\par
+6.try \{\par
+\tab\tab\tab bktransaction.withdraw(1200);\par
+\tab\tab\tab //BalanceNotFoundException e =new BalanceNotFoundException()\par
+\tab\tab\} catch (BalanceNotFoundException e) \{\par
+\tab\tab\tab e.printStackTrace();\par
+\tab\tab\tab //System.out.println(e.getMessage());\par
+\tab\tab\}\par
+\par
+throws  - keyword can be used to avoid try..catch\par
+\par
+............................................................\par
+\par
+A single try can have multiple catch blocks\par
+\par
+\tab try \{\par
+\tab\tab\tab bktransaction.withdraw(200);\par
+\tab\tab\tab double result = 10 / 0;\par
+\par
+\tab\tab\tab // BalanceNotFoundException e =new BalanceNotFoundException()\par
+\tab\tab\} catch (BalanceNotFoundException e) \{\par
+\tab\tab\tab e.printStackTrace();\par
+\tab\tab\tab // System.out.println(e.getMessage());\par
+\tab\tab\} catch (ArithmeticException ae) \{\par
+\tab\tab\tab ae.printStackTrace();\par
+\par
+\tab\tab\}\par
+\par
+\par
+java 8 syntax:\par
+catch (BalanceNotFoundException | ArithmeticException  e) \{\par
+\tab\tab\tab e.printStackTrace();\par
+\tab\tab\tab\par
+\tab\tab\}\par
+\par
+finally:\par
+ it is block gets called whether you have error or not.\par
+finally block generally used to write "Memory Management Code".\par
+like closing files,sockets,database connectionss\par
+\par
+///////////////////////////////////////////////////////////////\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
